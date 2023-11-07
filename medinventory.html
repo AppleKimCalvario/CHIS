@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Poppins-Bold';
+            src: url('font/Poppins/Poppins-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-size: 80%;
+            font-style: normal;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .profile-button {
+            background-color: transparent;
+            border-radius: 15px;
+            color: #0CB6B4;
+            font-family: 'Poppins-Bold';
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            stroke: #0CB6B4;
+            color: #0CB6B4;
+            font-family: 'Poppins-Bold';
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            stroke: #0CB6B4;
+            color: #0CB6B4;
+            font-family: 'Poppins-Bold';
+        }
+
+        .dropdown-item:hover {
+            background-color: #0CB6B4;
+            color: rgb(255, 255, 255);
+        }
+        .municipal {
+            text-align: center;
+            text-transform: uppercase;
+            color: #0CB6B4;
+            font-family: 'Poppins-Bold';
+            font-size: 50px;
+        }
+        .medicine-inventory {
+            text-align: center;
+            text-transform: uppercase;
+            color: #0CB6B4;
+            font-family: 'Poppins-Bold';
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .search-input {
+            border: 2px solid #000;
+            width: 80%;
+            margin: 1%;
+            font-size: 18px;
+            font-family: 'Poppins-Bold';
+        }
+        .medicine-table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .medicine-table {
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 1800px;
+            height: 600px;
+            font-family: 'Poppins-Bold';
+            margin: 1%;
+        }
+        .medicine-table th {
+            font-family: 'Poppins-Bold';
+            padding: 1%;
+            font-size: 18px;
+        }
+        .medicine-table td {
+            font-family: 'Poppins-Bold';
+        }
+        .action-button-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .action-button {
+            background-color: #0CB6B4;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-family: 'Poppins-Bold';
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="municipal">Municipal Health Office</div>
+            <div class="dropdown">
+                <button class="dropdown-button" style="color: #0CB6B4; font-family: Poppins-Bold; padding: 2%; font-size: 20px;">Municipal Health Worker</button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">Edit Profile</a>
+                    <a href="#" class="dropdown-item">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="medicine-inventory">Medicine Inventory</div>
+        <div class="medicine-table-container">
+            <table class="medicine-table">
+                <thead>
+                    <tr>
+                        <th colspan="1">
+                            <div>
+                                <div style="color: #0CB6B4; font-family: 'Poppins-Bold'; font-size: 25px; text-transform: uppercase;">Medicine List</div>
+                            </div>
+                        </th>
+                        <th colspan="2">
+                        </th>
+                        <th colspan="2">
+                            <div class="center-text" style="display: flex; justify-content: center;">
+                                <input type="text" class="search-input" placeholder="Search medicine" style="width: 100%; text-align: left; align-self: center; padding: 1.5%; font-family: Poppins-Bold;">
+                            </div>
+                        </th>                      
+                    </tr>                    
+                    <tr>
+                        <th style="background-color: #D3EEED;">Medicine Name</th>
+                        <th style="background-color: #D3EEED;">Expiration Date</th>
+                        <th style="background-color: #D3EEED;">Total Expired</th>
+                        <th style="background-color: #D3EEED;">Supply In</th>
+                        <th style="background-color: #D3EEED;">Supply Out</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <!-- Add 10 empty rows -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- ... (add more rows) ... -->
+                </tbody>
+            </table>
+        </div>
+        <div class="action-button-container">
+            <button class="action-button">Add Supply</button>
+            <button class="action-button">Distribute</button>
+        </div>
+    </div>
+</body>
+</html>
