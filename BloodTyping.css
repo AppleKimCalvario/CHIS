@@ -1,0 +1,182 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h3{
+  margin-top: 40px;
+  font-weight: bold;
+}
+p{
+  margin-top: 6%;
+  color: #0CB6B4;
+  font-weight: bold;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+}
+.container {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 5px solid #000; /* Change the color value here */
+}
+
+.container header {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #0CB6B4;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 8%;
+  border-bottom: 3px solid #505050; /* Add this line for the border */
+  padding-bottom: 10px; /* Adjust this value to customize the space between header text and the line */
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+
+/* Adjust the color and style of the close button on hover if desired */
+.close-button:hover {
+  color: red; /* Change to your desired color */
+}
+
+
+.container .form {
+  margin-top: 30px;
+  border-radius: 20%;
+  border: #0CB6B4;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #0CB6B4;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 25px;
+}
+.form button {
+  font-weight: bold;
+  margin-top: 8%;
+  background-color: #0CB6B4; /* Blue color */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 15px; /* Rounds the corners */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  float: right;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .ask-box {
+  margin-top: 20px;
+}
+.ask-box h3 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.ask-option, .ask) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .ask {
+  column-gap: 35px;
+}
+.ask input {
+  accent-color: rgb(0, 0, 0);
+  width: 30px;
+  height: 30px;
+}
+.form :where(.ask input, .ask label) {
+  cursor: pointer;
+}
+.ask label {
+  color: #000000;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  font-weight: bold;
+  margin-top: 3%;
+  background-color: #0CB6B4; /* Blue color */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 15px; /* Rounds the corners */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  float: right;
+}
+.form button:hover {
+  background: rgb(0, 0, 0);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.ask-option, .ask) {
+    row-gap: 15px;
+  }
+}

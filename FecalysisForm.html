@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="fecalysis.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <span class="close-button" onclick="closeForm()">X</span>
+      </div>
+      <div>
+        <header style="font-weight: bold;">ADD RECORD</header>
+      </div>
+      <form action="#" class="form">
+        <h3>Personal Information</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Record ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Patient ID</label>
+            <input type="text"/>
+          </div>
+        <div class="input-box">
+          <label>Name</label>
+            <input type="text"/>
+        </div>
+        </div>
+        <div class="input-box fecalysis">
+          <h3>Fecalysis</h3>
+          <div class="column">
+            <div class="input-box">
+              <label>Color</label>
+              <input type="text" placeholder="Enter color" required/>
+            </div>
+            <div class="input-box">
+              <label>Yeast Cells</label>
+              <input type="text" placeholder="Enter yeast cells" required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Consistency</label>
+              <input type="text" placeholder="Enter consistency" required/>
+            </div>
+            <div class="input-box">
+              <label>Parasites</label>
+              <input type="text" placeholder="Enter parasites" required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Pus Cell</label>
+              <input type="text" placeholder="Enter pus cell" required/>
+            </div>
+            <div class="input-box">
+              <label>Fat Glucose</label>
+              <input type="text" placeholder="Enter fat glucose" required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Red Blood Cell</label>
+              <input type="text" placeholder="Enter red blood cell" required/>
+            </div>
+            <div class="input-box">
+              <label>Others</label>
+              <input type="text" placeholder="Enter other necessary information"/>
+            </div>
+          </div>
+        </div>
+        <p>Service Type:</p>
+        <button>ADD RECORD</button>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

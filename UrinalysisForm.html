@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="Pregnancy.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <span class="close-button" onclick="closeForm()">X</span>
+      </div>
+      <div>
+        <header style="font-weight: bold;">ADD RECORD</header>
+      </div>
+      <form action="#" class="form">
+        <h3>Personal Information</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Record ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Patient ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Name</label>
+            <input type="text"/>
+        </div>
+        </div>
+        <h3>Urinalysis Physical Examination</h3>
+          <h3 style="color: #0CB6B4; font-weight: 500; margin-top: 3%; font-size: 16px;" >Color</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 2%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: 2.25%;">
+                <input type="checkbox" name="tobacco" />
+                <label>Colorless</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: -.75%;">
+                <input type="checkbox" name="alcohol" />
+                <label>Light Yellow</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: -1.50%;">
+                <input type="checkbox" name="street" />
+                <label>Dark Yellow</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; ">
+                <input type="checkbox" name="street" />
+                <label>Amber</label>
+            </div>
+          </div>
+
+          <h3 style="color: #0CB6B4; font-weight: 500; margin-top: 1%; font-size: 16px;" >Appearance</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 3%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: 5.50%;">
+                <input type="checkbox" name="tobacco" />
+                <label>Clear</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: 5.25%;">
+                <input type="checkbox" name="alcohol" />
+                <label>Hazy</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; ">
+                <input type="checkbox" name="street" />
+                <label>Cloudy</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; ">
+                <input type="checkbox" name="street" />
+                <label>Turbid</label>
+            </div>
+          </div>
+        </div>
+          <div class="ask-box">
+            <h3 style="color: #0CB6B4;">Mucus</h3>
+            <div class="ask-option" style="margin-top: 2%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-right: 7%;">
+                <input type="checkbox" name="medical-conditions"/>
+                <label>Yes</label>
+              </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; " >
+                <input type="checkbox" name="medical-conditions" />
+                <label >No</label>
+              </div>
+            </div>
+          </div>
+            <h3 style="font-weight: bolder; font-size: 20px;">Chemical Examination</h3>
+
+
+            <h3 style="color: #0CB6B4; font-weight: 500; margin-top: 2%; font-size: 16px;" >Specific Gravity</h3>
+            <div class="ask-box">
+              <div class="ask-option" style="margin-top: 1%;">
+                <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                  <input type="checkbox" name="tobacco" />
+                  <label>1.000</label>
+              </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                  <input type="checkbox" name="alcohol" />
+                  <label>1.005</label>
+              </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                  <input type="checkbox" name="street" />
+                  <label>1.010</label>
+              </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                  <input type="checkbox" name="street" />
+                  <label>1.015</label>
+              </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="street" />
+                <label>1.020</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="street" />
+                <label>1.025</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="street" />
+                <label>1.030</label>
+            </div>
+
+            </div>
+          </div>
+  
+          <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Ph Level</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 1%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 5.25%;">
+                <input type="checkbox" name="street" />
+                <label>5</label>
+            </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 5.25%;">
+                <input type="checkbox" name="tobacco" />
+                <label>6</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 4.75%;">
+                <input type="checkbox" name="alcohol" />
+                <label>7</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 4.75%;">
+                <input type="checkbox" name="street" />
+                <label>8</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="street" />
+                <label>9</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Leukocytes</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 1%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3%;">
+                <input type="checkbox" name="street" />
+                <label>neg</label>
+            </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 1.75%;">
+                <input type="checkbox" name="tobacco" />
+                <label>trace</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 4.50%;">
+                <input type="checkbox" name="alcohol" />
+                <label>+</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="street" />
+                <label>++</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Nitrite</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 1%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3%;">
+                <input type="checkbox" name="street" />
+                <label>neg</label>
+            </div>
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+                <input type="checkbox" name="tobacco" />
+                <label>pos</label>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Protein</h3>
+        <div class="ask-box">
+          <div class="ask-option" style="margin-top: 1%;">
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3%;">
+              <input type="checkbox" name="street" />
+              <label>neg</label>
+          </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 2%;">
+              <input type="checkbox" name="tobacco" />
+              <label>trace</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 1.5%;">
+              <input type="checkbox" name="alcohol" />
+              <label>+/30</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: -.65%;">
+              <input type="checkbox" name="street" />
+              <label>++/100</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+              <input type="checkbox" name="street" />
+              <label>+++/500</label>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Glucose</h3>
+        <div class="ask-box">
+          <div class="ask-option" style="margin-top: 1%;">
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: .25%;">
+              <input type="checkbox" name="street" />
+              <label>normal</label>
+          </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 4.25%;">
+              <input type="checkbox" name="tobacco" />
+              <label>50</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3%;">
+              <input type="checkbox" name="alcohol" />
+              <label>100</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 2%;">
+              <input type="checkbox" name="street" />
+              <label>250</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+              <input type="checkbox" name="street" />
+              <label>500</label>
+          </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+            <input type="checkbox" name="street" />
+            <label>1000</label>
+        </div>
+        </div>
+      </div>
+
+      <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Ketones</h3>
+      <div class="ask-box">
+        <div class="ask-option" style="margin-top: 1%;">
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;  margin-right: 3%;">
+            <input type="checkbox" name="street" />
+            <label>neg</label>
+        </div>
+          <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: .01%;">
+            <input type="checkbox" name="tobacco" />
+            <label>+/small</label>
+        </div>
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: -1%;">
+            <input type="checkbox" name="alcohol" />
+            <label>++/mod</label>
+        </div>
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+            <input type="checkbox" name="street" />
+            <label>+++/large</label>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Urobilinogene</h3>
+    <div class="ask-box">
+      <div class="ask-option" style="margin-top: 1%;">
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: .25%;">
+          <input type="checkbox" name="street" />
+          <label>normal</label>
+      </div>
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 6%;">
+          <input type="checkbox" name="tobacco" />
+          <label>1</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 5%;">
+          <input type="checkbox" name="alcohol" />
+          <label>4</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 4%;">
+          <input type="checkbox" name="street" />
+          <label>8</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+        <input type="checkbox" name="street" />
+        <label>12</label>
+    </div>
+    </div>
+  </div>
+
+  <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Bilirubin</h3>
+    <div class="ask-box">
+      <div class="ask-option" style="margin-top: 1%;">
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3.05%;">
+          <input type="checkbox" name="street" />
+          <label>neg</label>
+      </div>
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 5.50%;">
+          <input type="checkbox" name="tobacco" />
+          <label>+</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3.75%;">
+          <input type="checkbox" name="alcohol" />
+          <label>++</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+          <input type="checkbox" name="street" />
+          <label>+++</label>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="color: #0CB6B4; font-weight: 500; font-size: 16px;" >Blood</h3>
+    <div class="ask-box">
+      <div class="ask-option" style="margin-top: 1%;">
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 3.05%;">
+          <input type="checkbox" name="street" />
+          <label>neg</label>
+      </div>
+        <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: 2.25%;">
+          <input type="checkbox" name="tobacco" />
+          <label>trace</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%; margin-right: -1.50%;">
+          <input type="checkbox" name="alcohol" />
+          <label>about 50</label>
+      </div>
+      <div class="ask" style=" margin-left: 3.5%; margin-bottom: 1%; margin-top: 1%;">
+          <input type="checkbox" name="street" />
+          <label>about 250</label>
+      </div>
+    </div>
+  </div>
+  <p>Service Type:</p>
+        <button>ADD RECORD</button>
+      </form>
+    </section>
+  </body>
+  <script src="jscript.js"></script>
+</html>

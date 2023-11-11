@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="Pregnancy.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <span class="close-button" onclick="closeForm()">X</span>
+      </div>
+      <div>
+        <header style="font-weight: bold;">ADD RECORD</header>
+      </div>
+      <form action="#" class="form">
+        <h3>Personal Information</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Record ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Patient ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Name</label>
+            <input type="text"/>
+        </div>
+        </div>
+        <h3>Pregnancy Test</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Fist Day of the Last Menstrual Period: </label>
+            <input type="date"  required />
+          </div>
+          </div>
+          <div class="ask-box">
+            <h3 style="color: #0CB6B4;">Was it normal?</h3>
+            <div class="ask-option">
+              <div class="ask">
+                <input type="radio" name="medical-conditions"/>
+                <label>Yes</label>
+              </div>
+              <div class="ask" >
+                <input type="radio" name="medical-conditions" />
+                <label >No</label>
+              </div>
+            </div>
+        </div>
+        
+        <h3>Symptoms</h3>
+        <div class="ask-box" style="margin: 1%;">
+          <div class="ask-option">
+            <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: 4%;">
+              <input type="checkbox" name="nausea" />
+              <label>Nausea</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: 1.50%;">
+              <input type="checkbox" name="vomiting" />
+              <label>Vomiting</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: 3.75%;">
+              <input type="checkbox" name="bloating" />
+              <label>Bloating</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%;">
+              <input type="checkbox" name="fatigue" />
+              <label>Fatigue</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: -5.25%;">
+              <input type="checkbox" name="urinary" />
+              <label>Urinary Frequency</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: -6.25%;">
+              <input type="checkbox" name="appetite" />
+              <label>Appetite Changes</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%;  margin-right: -5.25%;">
+              <input type="checkbox" name="breast" />
+              <label>Breast Tenderness</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: -10.50%;">
+              <input type="checkbox" name="complex" />
+              <label>Complex Changes</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: -4%;">
+              <input type="checkbox" name="vaginal" />
+              <label>Vaginal Bleeding</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%; margin-right: .25%;">
+              <input type="checkbox" name="pelvic" />
+              <label>Pelvic Pain</label>
+          </div>
+          <div class="ask" style="margin-top: 1%; margin-left: 4.5%; margin-bottom: 3%;">
+            <input type="checkbox" name="others" />
+            <label>Others</label>
+          </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Number of Pregnancies</label>
+              <input type="number" placeholder="Enter number of pregnancies"/>
+            </div>
+            <div class="input-box">
+              <label>Number of Abortion</label>
+              <input type="number" placeholder="Enter number of abortion" required />
+            </div>
+            <div class="input-box">
+              <label>Number of Living Children</label>
+              <input type="number" placeholder="Enter number of living children" required />
+            </div>
+          </div>
+          <h3 style="color: #0CB6B4;">Do you use any of the following?</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 5%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 5%;">
+                <input type="checkbox" name="tobacco" />
+                <label>Tobacco</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 5%;">
+                <input type="checkbox" name="alcohol" />
+                <label>Alcohol</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; ">
+                <input type="checkbox" name="street" />
+                <label>Street Drugs</label>
+            </div>
+          </div>
+          <h3 style="color: #0CB6B4; margin-top: -2%;">Do you desire to be pregnant now?</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 5%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 9.50%;">
+                <input type="checkbox" name="tobacco" />
+                <label>Yes</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 9.25%;">
+                <input type="checkbox" name="alcohol" />
+                <label>No</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; ">
+                <input type="checkbox" name="street" />
+                <label>Unsure</label>
+            </div>
+          </div>
+          <h3 style="color: #0CB6B4; margin-top: -2%;">What's your plan if you're pregnant?</h3>
+          <div class="ask-box">
+            <div class="ask-option" style="margin-top: 5%;">
+              <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 4%;">
+                <input type="checkbox" name="tobacco" />
+                <label>Parenting</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; margin-right: 3.50%;">
+                <input type="checkbox" name="alcohol" />
+                <label>Adoption</label>
+            </div>
+            <div class="ask" style=" margin-left: 3.5%; margin-bottom: 3%; ">
+                <input type="checkbox" name="street" />
+                <label>Termination</label>
+            </div>
+          </div>
+
+        <h3 style="font-weight: bolder; font-size: 18px;">Medication</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Medicine ID</label>
+            <input type="number" placeholder="Enter medicine id"/>
+          </div>
+          <div class="input-box">
+            <label>Medicine Name</label>
+            <input type="text" />
+          </div>
+          <div class="input-box">
+            <label>Number of Medicine</label>
+            <input type="number" placeholder="Enter medicine quantity" required />
+          </div>
+        </div>
+        <p>Service Type:</p>
+        <button>ADD RECORD</button>
+      </form>
+    </section>
+  </body>
+  <script src="jscript.js"></script>
+</html>

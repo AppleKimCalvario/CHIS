@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="BloodTyping.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <span class="close-button" onclick="closeForm()">X</span>
+      </div>
+      <div>
+        <header style="font-weight: bold;">ADD RECORD</header>
+      </div>
+      <form action="#" class="form">
+        <h3>Personal Information</h3>
+        <div class="column">
+          <div class="input-box">
+            <label>Record ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Patient ID</label>
+            <input type="text"/>
+          </div>
+          <div class="input-box">
+            <label>Name</label>
+            <input type="text"/>
+        </div>
+        </div>
+        <h3>Medical History</h3>
+        <div class="ask-box">
+          <h3 style="color: #0CB6B4;">Do you have any allergies? (If yes, please specify.)</h3>
+          <div class="ask-option">
+              <div class="ask">
+                  <input type="radio" name="allergies" checked />
+                  <label>Yes</label>
+              </div>
+              <div class="ask">
+                  <input type="radio" name="allergies" />
+                  <label>No</label>
+              </div>
+              <div class="column">
+                  <div class="input-box" style="margin-top: -1%;">
+                      <input type="text" placeholder="Specify allergies" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="ask-box">
+          <h3 style="color: #0CB6B4;">Do you have any pre-existing medical conditions? (If yes, please specify.)</h3>
+          <div class="ask-option">
+              <div class="ask">
+                  <input type="radio" name="medical-conditions" checked />
+                  <label>Yes</label>
+              </div>
+              <div class="ask">
+                  <input type="radio" name="medical-conditions" />
+                  <label>No</label>
+              </div>
+              <div class="column">
+                  <div class="input-box" style="margin-top: -1%;">
+                      <input type="text" placeholder="Specify pre-existing MC" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="ask-box">
+          <h3 style="color: #0CB6B4;">Do you have any Blood Transfusion History? (If yes, please specify.)</h3>
+          <div class="ask-option">
+              <div class="ask">
+                  <input type="radio" name="transfusion-history" checked />
+                  <label>Yes</label>
+              </div>
+              <div class="ask">
+                  <input type="radio" name="transfusion-history" />
+                  <label>No</label>
+              </div>
+              <div class="column">
+                  <div class="input-box" style="margin-top: -1%;">
+                      <input type="text" placeholder="Specify BT History" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        <h3 style="font-weight: bolder; font-size: 18px;">Testing Information</h3>
+        <div class="input-box">
+          <label>Reason for Blood Typing</label>
+          <input type="text" placeholder="Enter the reason for blood typing" required />
+        </div>
+        <p>Service Type:</p>
+        <button>ADD RECORD</button>
+      </form>
+    </section>
+  </body>
+  <script src="jscript.js"></script>
+</html>
